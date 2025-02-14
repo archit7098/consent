@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Time & Aggressive Behavior Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        label {
+            font-weight: bold;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Relationship Between Screen Time and Aggressive Behavior in Children</h2>
+        <p><strong>Researcher:</strong> Dr. Archit K. Mehta, MD (Hom.) Psychiatry Scholar</p>
+        
+        <h3>Purpose of the Study:</h3>
+        <p>This study aims to assess the impact of screen time on aggression levels in children aged 5-12 years. Your participation will help in understanding behavioral patterns and contribute to future recommendations on screen usage.</p>
+        
+        <h3>Participation Details:</h3>
+        <ul>
+            <li>You will be asked to fill out a short questionnaire about your child’s screen time and behavior.</li>
+            <li>The estimated time for completion is 5-7 minutes.</li>
+            <li>No identifiable personal information will be collected.</li>
+            <li>Participation is completely voluntary, and you may withdraw at any time.</li>
+        </ul>
+        
+        <h3>Confidentiality:</h3>
+        <p>All responses will remain anonymous and used solely for research purposes. The data will be securely stored and analyzed in a group format.</p>
+        
+        <h3>Consent Statement:</h3>
+        <p>By proceeding with the questionnaire, I confirm that:</p>
+        <ul>
+            <li>I have read and understood the study details.</li>
+            <li>I voluntarily agree to participate.</li>
+            <li>I understand that my responses will be anonymous and confidential.</li>
+        </ul>
+        
+        <label><input type="checkbox" id="consent"> I agree to participate in this study.</label>
+        <br><br>
+        <button onclick="submitConsent()">Proceed to Questionnaire</button>
+    </div>
+    
+    <script>
+        function submitConsent() {
+            var consent = document.getElementById("consent").checked;
+            if (consent) {
+                alert("Thank you for your participation. Proceeding to the questionnaire...");
+                window.location.href = "https://form.jotform.com/250440799443058"; // Replace with actual questionnaire link
+            } else {
+                alert("Please check the consent box to proceed.");
+            }
+        }
+    </script>
+</body>
+</html>
